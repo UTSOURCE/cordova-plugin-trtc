@@ -10,3 +10,13 @@
 [https://github.com/zhaoyang21cn/iOS_TRTC](https://github.com/zhaoyang21cn/iOS_TRTC)
 
 iOS的sdk需要自己添加到src/ios/libs下, 可以从官网获取
+
+
+
+
+先clone一个cordova-plugin-trtc文件夹到项目的plugins文件夹下面, 然后shell跑一下
+cordova platform rm ios
+cordova plugin add cordova-plugin-trtc --variable APP_ID="你的appid"
+cordova platform add ios
+cordova build ios
+android同理
